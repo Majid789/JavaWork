@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="400" prefWidth="800.0" style="-fx-background-color: lightgrey" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxassignemnt.Controller.TableFx">
+  <padding><Insets bottom="40" left="40" right="40" top="40" /></padding>
+ <!-- <columnConstraints>
+    <ColumnConstraints halignment="RIGHT" maxWidth="Infinity" minWidth="100.0" prefWidth="100.0">
+    </ColumnConstraints>
+    <ColumnConstraints hgrow="ALWAYS" maxWidth="Infinity" minWidth="200.0" prefWidth="200.0">
+    </ColumnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints />
+  </columnConstraints>-->
+  <Label layoutX="245" layoutY="33" prefHeight="20" prefWidth="250" text="User Data Table" textAlignment="CENTER">
+    <font>
+      <Font name="Arial" size="24" />
+    </font>
+    <GridPane.margin>
+      <Insets bottom="350" left="220" right="0" top="-30" />
+    </GridPane.margin>
+  </Label>
+  <TableView fx:id="tableview" layoutY="100.0" prefHeight="10" prefWidth="680.0">
+    <columns>
+      <TableColumn fx:id="columnId" prefWidth="75" text="ID" />
+      <TableColumn fx:id="columnName" prefWidth="75" text="Name" />
+      <TableColumn fx:id="columnEmail" prefWidth="75" text="Email" />
+      <TableColumn fx:id="columnPhone" prefWidth="75" text="Phone No" />
+      <TableColumn fx:id="columnHouse" prefWidth="75" text="House No" />
+      <TableColumn fx:id="columnTown" prefWidth="75" text="Town" />
+      <TableColumn fx:id="columnCity" prefWidth="75" text="City" />
+      <TableColumn fx:id="columnState" prefWidth="75" text="State" />
+      <TableColumn fx:id="columnCountry" prefWidth="75" text="Country" />
+    </columns>
+  </TableView>
+   <Button  onAction="#showUserWindow" layoutX="186.0" layoutY="331.0" prefHeight="40" prefWidth="60" text="User" GridPane.rowIndex="1" alignment="CENTER">
+      <GridPane.margin>
+         <Insets  left="140"/>
+      </GridPane.margin></Button>
+    <Button  onAction="#showAddressWindow" layoutX="186.0" layoutY="331.0" prefHeight="40" prefWidth="60" text="Address" GridPane.rowIndex="1" alignment="CENTER">
+        <GridPane.margin>
+            <Insets  left="340"/>
+        </GridPane.margin></Button>
+    <Button  onAction="#cancel" layoutX="186.0" layoutY="331.0" prefHeight="40" prefWidth="60" text="Exit" GridPane.rowIndex="1" alignment="CENTER">
+        <GridPane.margin>
+            <Insets  left="540"/>
+        </GridPane.margin></Button>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+  <!--<Button fx:id="submitButton"  defaultButton="true" prefHeight="40" prefWidth="100" text="Submit">
+    <GridPane.margin>
+      <Insets bottom="20" left="0" right="0" top="20" />
+    </GridPane.margin>
+  </Button>
+  <Button fx:id="cancelButton"  defaultButton="true"  prefHeight="40" prefWidth="100" text="Cancel">
+    <GridPane.margin>
+      <Insets bottom="20" left="0" right="0" top="20" />
+    </GridPane.margin>
+  </Button>-->
+  <!--<TableView fx:id="tableview" layoutY="100.0" prefHeight="200.0" prefWidth="680.0">
+    <columns>
+      <TableColumn fx:id="columnId" prefWidth="75" text="ID" />
+      <TableColumn fx:id="columnName" prefWidth="75" text="Name" />
+      <TableColumn fx:id="columnEmail" prefWidth="75" text="Email" />
+      <TableColumn fx:id="columnPhone" prefWidth="75" text="Phone No" />
+      <TableColumn fx:id="columnHouse" prefWidth="75" text="House No" />
+      <TableColumn fx:id="columnTown" prefWidth="75" text="Town" />
+      <TableColumn fx:id="columnCity" prefWidth="75" text="City" />
+      <TableColumn fx:id="columnState" prefWidth="75" text="State" />
+      <TableColumn fx:id="columnCountry" prefWidth="75" text="Country" />
+    </columns>
+  </TableView>-->
+
+  <!--<Button fx:id="submitButton" onAction="#register" defaultButton="true" prefHeight="40" prefWidth="100" text="Submit" GridPane.columnSpan="1" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.rowSpan="1">
+    <GridPane.margin>
+      <Insets bottom="20" left="0" right="0" top="20" />
+    </GridPane.margin>
+  </Button>
+  <Button fx:id="cancelButton" onAction="#cancel" defaultButton="true"  prefHeight="40" prefWidth="100" text="Cancel" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.rowSpan="1">
+    <GridPane.margin>
+      <Insets bottom="20" left="0" right="0" top="20" />
+    </GridPane.margin>
+  </Button>-->
+
+  <!--<rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>-->
+</GridPane>
